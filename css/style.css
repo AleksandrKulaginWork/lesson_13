@@ -1,0 +1,664 @@
+body{
+    margin-top: 50px;
+}
+
+.wrapper{
+    position: relative;
+    width: 1200px;
+    min-height: 100px;
+    margin: 0 auto;
+    border: 2px solid black;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.background{
+    position: relative;
+}
+
+.background-sky{
+    background: rgb(161,37,218);
+    background: linear-gradient(163deg, rgba(161,37,218,1) 14%, rgba(5,208,220,1) 83%);
+    width: 100%;
+    height: 250px;
+    position: relative;
+    z-index: 1;
+}
+
+.background-sky__sun{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 9%, rgba(251,252,70,1) 12%, rgba(63,237,251,0) 30%);
+    position: relative;
+    width: 100%;
+    height: 500px;
+    z-index: 2;
+    left: 400px;
+    top: -40px;
+}
+
+.palma{
+    position: absolute;
+    z-index: 5;
+    top: 190px;
+    right: 120px;
+    width: 150px;
+}
+
+.lighthouse{
+    position: absolute;
+    z-index: 5;
+    top: 50px;
+    left: 50px;
+    height: 250px;
+    opacity: 0.5;
+}
+
+.lighthouse__light{
+    position: absolute;
+    background: rgb(238,236,174);
+    background: radial-gradient(circle, rgba(238,236,174,0.6923144257703081) 4%, rgba(255,127,127,0.4682247899159664) 7%, rgba(241,241,241,0) 16%);
+    top: -60px;
+    right: 486px;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.ship{
+    top: 130px;
+    left: -165px;
+    position: absolute;
+    z-index: 5;
+    height: 120px;
+    transform: scale(-1, 1);
+    animation-name: ship-sail;
+    animation-duration: 60s;
+    transition-timing-function: linear;
+}
+
+@keyframes ship-sail{
+    0%{
+        left: -165px;
+    }
+    25%{
+        opacity: 1;
+    }
+    100%{
+        left: 800px;
+        transform: scale(0, 0);
+        top: 192px;
+        opacity: 0.5;
+    }
+}
+
+.background-water{
+    position: relative;
+    z-index: 3;
+}
+
+.water__wave-1{
+    background: linear-gradient(180deg, rgb(125, 246, 218) 6%, rgb(55, 184, 187) 23%);
+    width: 100%;
+    height: 50px;
+}
+
+.water__wave-2{
+    background: linear-gradient(180deg, rgb(125, 246, 218) 6%, rgb(55, 184, 187) 23%);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    transform: rotate(-1deg);
+    animation-name: wave-2;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes wave-2{
+    0%{
+        transform: rotate(-1deg);
+    }
+    50%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(-1deg);
+    }
+}
+
+.water__wave-3{
+    background: linear-gradient(180deg, rgb(125, 246, 218) 6%, rgb(55, 184, 187) 23%);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transform: rotate(2deg);
+    animation-name: wave-3;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes wave-3{
+    0%{
+        transform: rotate(2deg);
+    }
+    50%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(2deg);
+    }
+}
+
+.water__wave-4{
+    background: linear-gradient(180deg, rgb(125, 246, 218) 6%, rgb(55, 184, 187) 23%);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    transform: rotate(-1deg);
+    animation-name: wave-4;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes wave-4{
+    0%{
+        transform: rotate(-1deg);
+    }
+    50%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(-1deg);
+    }
+}
+
+.water__wave-5{
+    background: linear-gradient(180deg, rgb(125, 246, 218) 6%, rgb(55, 184, 187) 23%);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    transform: rotate(2deg);
+    animation-name: wave-5;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes wave-5{
+    0%{
+        transform: rotate(2deg);
+    }
+    50%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(2deg);
+    }
+}
+
+.water__wave-6{
+    background: linear-gradient(180deg, rgb(125, 246, 218) 6%, rgb(55, 184, 187) 23%);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    transform: rotate(-1deg);
+    animation-name: wave-6;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes wave-6{
+    0%{
+        transform: rotate(-1deg);
+    }
+    50%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(-1deg);
+    }
+}
+
+.water__wave-7{
+    background: linear-gradient(180deg, rgb(125, 246, 218) 6%, rgb(55, 184, 187) 23%);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    transform: rotate(2deg);
+    animation-name: wave-7;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes wave-7{
+    0%{
+        transform: rotate(2deg);
+    }
+    50%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(2deg);
+    }
+}
+
+.water__wave-8{
+    background: linear-gradient(180deg, rgb(125, 246, 218) 6%, rgb(55, 184, 187) 23%);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 105px;
+    left: 0;
+    transform: rotate(-1deg);
+    animation-name: wave-8;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes wave-8{
+    0%{
+        transform: rotate(-1deg);
+    }
+    50%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(-1deg);
+    }
+}
+
+.water__wave-9{
+    background: linear-gradient(180deg, rgb(125, 246, 218) 6%, rgb(55, 184, 187) 23%);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    transform: rotate(2deg);
+    animation-name: wave-9;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes wave-9{
+    0%{
+        transform: rotate(2deg);
+    }
+    50%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(2deg);
+    }
+}
+
+.water__wave-10{
+    background: linear-gradient(180deg, rgb(125, 246, 218) 6%, rgb(55, 184, 187) 23%);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 135px;
+    left: 0;
+    transform: rotate(-1deg);
+    animation-name: wave-10;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes wave-10{
+    0%{
+        transform: rotate(-1deg);
+    }
+    50%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(-1deg);
+    }
+}
+
+.water__wave-11{
+    background: linear-gradient(180deg, rgb(125, 246, 218) 6%, rgb(55, 184, 187) 23%);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    transform: rotate(2deg);
+    animation-name: wave-11;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes wave-11{
+    0%{
+        transform: rotate(2deg);
+    }
+    50%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(2deg);
+    }
+}
+
+.water__wave-12{
+    background: linear-gradient(180deg, rgb(125, 246, 218) 6%, rgb(55, 184, 187) 23%);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 165px;
+    left: 0;
+    transform: rotate(-1deg);
+    animation-name: wave-12;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes wave-12{
+    0%{
+        transform: rotate(-1deg);
+    }
+    50%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(-1deg);
+    }
+}
+
+.water__wave-13{
+    background: linear-gradient(180deg, rgb(125, 246, 218) 6%, rgb(55, 184, 187) 23%);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    transform: rotate(2deg);
+    animation-name: wave-13;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes wave-13{
+    0%{
+        transform: rotate(2deg);
+    }
+    50%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(2deg);
+    }
+}
+
+.water__wave-14{
+    background: linear-gradient(180deg, rgb(125, 246, 218) 6%, rgb(55, 184, 187) 23%);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 195px;
+    left: 0;
+    transform: rotate(-1deg);
+    animation-name: wave-14;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes wave-14{
+    0%{
+        transform: rotate(-1deg);
+    }
+    50%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(-1deg);
+    }
+}
+
+.water__wave-15{
+    background: linear-gradient(180deg, rgb(125, 246, 218) 6%, rgb(55, 184, 187) 23%);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 210px;
+    left: 0;
+}
+
+.water-shadow{
+    background: rgb(92,95,245);
+    background: linear-gradient(163deg, rgba(92,95,245,0.5465783725599616) 0%, rgba(237,6,244,0.4289313137364321) 30%, rgba(255,255,255,0) 62%);
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    z-index: 4;
+    top: 0px;
+}
+
+.sand{
+    position: relative;
+    z-index: 5;
+}
+
+.umbrella{
+    position: absolute;
+    z-index: 7;
+    top: 270px;
+    left: 450px;
+    height: 270px;
+    transform: rotate(-15deg);
+    animation-name: umbrella-swinging;
+    animation-duration: 10s;
+    transform-origin: bottom;
+    animation-iteration-count: infinite;
+}
+
+@keyframes umbrella-swinging{
+    0%{
+        transform: rotate(-15deg);
+    }
+
+    25%{
+        transform: rotate(-10deg);
+    }
+
+    50%{
+        transform: rotate(-13deg);
+    }
+
+    75%{
+        transform: rotate(-5deg);
+    }
+
+    100%{
+        transform: rotate(-15deg);
+    }
+}
+
+
+
+.umbrella-top{
+    position: relative;
+    z-index: 8;
+}
+
+.top-triangle__0{
+    width: 7px; 
+    height: 7px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 14%, rgba(185,185,185,1) 49%);
+    border-radius: 50%;
+    border: 0.5px solid rgb(138, 134, 134);
+    position: absolute;
+    top: -1px;
+    left: 26.5px;
+    z-index: 2;
+}
+
+.top-triangle__1{
+    background: rgb(184, 184, 184);
+    width: 2px;
+    height: 10px;
+    border-radius: 100px 100px 0 0;
+    border-top: 0.5px solid rgb(138, 134, 134);
+    border-left: 0.5px solid rgb(138, 134, 134);
+    border-right: 0.5px solid rgb(138, 134, 134);
+    border-bottom: 0.5px solid rgb(138, 134, 134);
+    position: absolute;
+    top: -10px;
+    left: 29px;
+    z-index: 3;
+}
+
+.top-triangle__2{
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 140px solid rgb(179, 112, 243);
+}
+
+.top-triangle__3{
+    width: 0px;
+    height: 0px;
+    border-left: 30px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 143px solid rgb(252, 139, 242);
+    position: absolute;
+    top: -6.3px;
+    left: -21px;
+    transform: rotate(18deg);
+}
+
+
+.top-triangle__4{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 143px solid rgb(146, 223, 102);
+    position: absolute;
+    top: -6.3px;
+    left: 36px;
+    transform: rotate(-18deg);
+}
+
+
+.top-triangle__5{
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 146px solid rgb(43, 226, 195);
+    position: absolute;
+    top: -18px;
+    left: -37px;
+    transform: rotate(34deg);
+}
+
+.top-triangle__6{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 146px solid rgb(248, 246, 94);
+    position: absolute;
+    top: -18px;
+    left: 58px;
+    transform: rotate(-34deg);
+}
+
+.top-triangle__7{
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 147px solid rgb(252, 126, 126);
+    position: absolute;
+    top: -31.5px;
+    left: -49.5px;
+    transform: rotate(47.5deg);
+}
+
+.top-triangle__8{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 147px solid rgb(148, 233, 229);
+    position: absolute;
+    top: -31.5px;
+    left: 75.5px;
+    transform: rotate(-47.5deg);
+}
+
+.top-triangle__9{
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 149px solid rgb(247, 255, 132);
+    position: absolute;
+    top: -44.5px;
+    left: -54.8px;
+    transform: rotate(61deg);
+}
+
+.top-triangle__10{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 149px solid rgb(252, 139, 242);
+    position: absolute;
+    top: -45px;
+    left: 86px;
+    transform: rotate(-61deg);
+}
+
+.bottom__leg-1{
+    background: rgb(184, 184, 184);
+    width: 2px;
+    height: 200px;
+    border-radius: 100px 100px 0 0;
+    border-top: 0.5px solid rgb(138, 134, 134);
+    border-left: 0.5px solid rgb(138, 134, 134);
+    border-right: 0.5px solid rgb(138, 134, 134);
+    border-bottom: 0.5px solid rgb(138, 134, 134);
+    position: absolute;
+    top: 70px;
+    left: 29px;
+}
+
+.bottom__leg-2{
+    background: rgb(184, 184, 184);
+    width: 4px;
+    height: 10px;
+    border-radius: 100px 100px 0 0;
+    border-top: 0.5px solid rgb(138, 134, 134);
+    border-left: 0.5px solid rgb(138, 134, 134);
+    border-right: 0.5px solid rgb(138, 134, 134);
+    border-bottom: 0.5px solid rgb(138, 134, 134);
+    position: absolute;
+    top: 200px;
+    left: 28px;
+    z-index: 10;
+}
+
+
+
+
+
+
